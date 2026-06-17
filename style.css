@@ -52,6 +52,7 @@ h1 {
   background: var(--surface);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
+  border-radius: 0px;
 }
 
 .card h2,
