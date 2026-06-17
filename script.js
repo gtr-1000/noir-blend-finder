@@ -1,5 +1,11 @@
 const button = document.getElementById("recommend-btn");
 
 button.addEventListener("click", () => {
-    alert("Bem-vindo ao NOIR Blend Finder!");
+
+    const intensity = document.querySelector(
+        'input[name="intensity"]:checked'
+    );
+
+    console.log(intensity);
+
 });
