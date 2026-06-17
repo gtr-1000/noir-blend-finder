@@ -6,6 +6,6 @@ button.addEventListener("click", () => {
         'input[name="intensity"]:checked'
     );
 
-    console.log(intensity);
+    console.log(intensity.value);
 
 });
