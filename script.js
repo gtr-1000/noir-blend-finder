@@ -1,5 +1,5 @@
 const button = document.getElementById("recommend-btn");
 
 button.addEventListener("click", () => {
-    alert("JavaScript está funcionando!");
+    alert("Bem-vindo ao NOIR Blend Finder!");
 });
