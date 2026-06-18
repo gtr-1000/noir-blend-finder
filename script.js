@@ -6,6 +6,8 @@ button.addEventListener("click", () => {
         'input[name="intensity"]:checked'
     );
 
-    console.log(intensity.value);
+    const blendName = document.getElementById("blend-name");
+
+    blendName.textContent = intensity.value;
 
 });
