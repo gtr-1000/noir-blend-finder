@@ -8,6 +8,6 @@ button.addEventListener("click", () => {
 
     const blendName = document.getElementById("blend-name");
 
-    blendName.textContent = "Blend: " + intensity.value.toUpperCase();
+    blendName.textContent = "BLEND: " + intensity.value.toUpperCase();
 
 });
