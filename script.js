@@ -14,5 +14,6 @@ button.addEventListener("click", () => {
         blendName.textContent = "VELVET";}
     if (intensity.value === "strong"){
         blendName.textContent = "ECLIPSE";}
-    
+    if(intensity.value === "very strong"){
+        blendName.textContent = "VL200";}
 });
