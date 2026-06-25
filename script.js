@@ -8,6 +8,11 @@ button.addEventListener("click", () => {
 
     const blendName = document.getElementById("blend-name");
 
-    blendName.textContent = "BLEND: " + intensity.value.toUpperCase();
-
+    if (intensity.value === "light"){
+        blendName.textContent = "AURORA";}
+    if (intensity.value === "medium"){
+        blendName.textContent = "VELVET";}
+    if (intensity.value === "strong"){
+        blendName.textContent = "ECLIPSE";}
+    
 });
