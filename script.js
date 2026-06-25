@@ -20,6 +20,8 @@ button.addEventListener("click", () => {
         blendName.textContent = "VELVET";}
     if (intensity.value === "strong"  && method.value === "espresso"){
         blendName.textContent = "ECLIPSE";}
+    if (intensity.value === "strong" && method.value === "french"){
+        blendName.textContent = "RITUAL";}
     if (intensity.value === "very strong" && method.value === "french"){
         blendName.textContent = "VL200";}
 });
