@@ -18,8 +18,8 @@ button.addEventListener("click", () => {
         blendName.textContent = "AURORA";}
     if (intensity.value === "light" && method.value === "espresso"){
         blendName.textContent = "KRIN";}
-    if (intensity.value === " light" && method.value === "v60"){
-        blendName.textContent === "FLUE";}
+    if (intensity.value === "light" && method.value === "v60"){
+        blendName.textContent = "FLUE";}
     if (intensity.value === "medium" && method.value === "v60"){
         blendName.textContent = "VELVET";}
     if (intensity.value === "medium" && method.value === "espresso"){
