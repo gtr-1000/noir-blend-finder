@@ -14,28 +14,35 @@ button.addEventListener("click", () => {
 
     const blendName = document.getElementById("blend-name");
 
+    let recommendation = "";
+
+    blendName.textContent = recommendation;
+
     if (intensity.value === "light" &&  method.value === "french"){
-        blendName.textContent = "AURORA";}
+        recommendation = "AURORA";}
     if (intensity.value === "light" && method.value === "espresso"){
-        blendName.textContent = "KRIN";}
+        recommendation = "KRIN";}
     if (intensity.value === "light" && method.value === "v60"){
-        blendName.textContent = "FLUE";}
+        recommendation = "FLUE";}
     if (intensity.value === "medium" && method.value === "v60"){
-        blendName.textContent = "VELVET";}
+        recommendation = "VELVET";}
     if (intensity.value === "medium" && method.value === "espresso"){
-        blendName.textContent = "LORT";}
+        recommendation = "LORT";}
     if (intensity.value === "medium" && method.value === "french"){
-        blendName.textContent = "MAGIF";}
+        recommendation = "MAGIF";}
     if (intensity.value === "strong"  && method.value === "espresso"){
-        blendName.textContent = "ECLIPSE";}
+        recommendation = "ECLIPSE";}
     if (intensity.value === "strong" && method.value === "french"){
-        blendName.textContent = "RITUAL";}
+        recommendation = "RITUAL";}
     if (intensity.value === "strong" && method.value === "v60"){
-        blendName.textContent = "VIKING";}
+        recommendation = "VIKING";}
     if (intensity.value === "very strong" && method.value === "french"){
-        blendName.textContent = "VL200";}
+        recommendation = "VL200";}
     if (intensity.value === "very strong" && method.value === "espresso"){
-        blendName.textContent = "WARRIORS";}
+        recommendation = "WARRIORS";}
     if (intensity.value === "very strong" && method.value === "v60"){
-        blendName.textContent = "CHARM";}
+        recommendation = "CHARM";}
+
+    
+    
 });
