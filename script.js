@@ -38,8 +38,10 @@ button.addEventListener("click", () => {
         recommendation = "VL200";}
     else if (intensity.value === "very strong" && method.value === "espresso"){
         recommendation = "WARRIORS";}
-    else {
+    else if (intensity.value === "very strong" && method.value === "v60"){
         recommendation = "CHARM";}
+    else {
+        recommendation = "Please select all options";}
 
 
     blendName.textContent = recommendation;
