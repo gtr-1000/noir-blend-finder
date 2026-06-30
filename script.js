@@ -51,3 +51,9 @@ button.addEventListener("click", () => {
     
     
 });
+
+const coffe = { 
+    name : "ECLIPSE",
+    origin : "Ethiopia",
+    roast : "strong" };
+console.log(coffe.name);
