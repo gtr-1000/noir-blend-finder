@@ -1,3 +1,21 @@
+const coffees = {
+    "strong-espresso": "ECLIPSE",
+    "strong-french": "RITUAL",
+    "strong-v60": "VIKING",
+
+    "medium-espresso": "LORT",
+    "medium-french": "MAGIF",
+    "medium-v60": "VELVET",
+
+    "light-espresso": "KRIN",
+    "light-french": "AURORA",
+    "light-v60": "FLUE",
+
+    "very strong-espresso": "WARRIORS",
+    "very strong-french": "VL200",
+    "very strong-v60": "CHARM",
+};
+
 const button = document.getElementById("recommend-btn");
 
 button.addEventListener("click", () => {
@@ -17,34 +35,13 @@ button.addEventListener("click", () => {
     let recommendation = "";
 
     
+    
     if (!intensity || !method){
         recommendation= "Please select all options";}
-    else if (intensity.value === "light" &&  method.value === "french"){
-        recommendation = "AURORA";}
-    else if (intensity.value === "light" && method.value === "espresso"){
-        recommendation = "KRIN";}
-    else if (intensity.value === "light" && method.value === "v60"){
-        recommendation = "FLUE";}
-    else if (intensity.value === "medium" && method.value === "v60"){
-        recommendation = "VELVET";}
-    else if (intensity.value === "medium" && method.value === "espresso"){
-        recommendation = "LORT";}
-    else if (intensity.value === "medium" && method.value === "french"){
-        recommendation = "MAGIF";}
-    else if (intensity.value === "strong"  && method.value === "espresso"){
-        recommendation = "ECLIPSE";}
-    else if (intensity.value === "strong" && method.value === "french"){
-        recommendation = "RITUAL";}
-    else if (intensity.value === "strong" && method.value === "v60"){
-        recommendation = "VIKING";}
-    else if (intensity.value === "very strong" && method.value === "french"){
-        recommendation = "VL200";}
-    else if (intensity.value === "very strong" && method.value === "espresso"){
-        recommendation = "WARRIORS";}
-    else if (intensity.value === "very strong" && method.value === "v60"){
-        recommendation = "CHARM";}
+
     else {
-        recommendation = "";}
+        const key = intensity.value + "-" + method.value;
+        recommendation = coffees[key];}
 
 
     blendName.textContent = recommendation;
@@ -52,10 +49,4 @@ button.addEventListener("click", () => {
     
 });
 
-const coffe = { 
-    name : "ECLIPSE",
-    origin : "Ethiopia",
-    roast : "strong" };
-console.log(coffe.name);
-console.log(coffe.origin);
-console.log(coffe.roast);
+
