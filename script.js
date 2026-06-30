@@ -16,7 +16,10 @@ button.addEventListener("click", () => {
 
     let recommendation = "";
 
-    if (intensity.value === "light" &&  method.value === "french"){
+    
+    if (!intensity || !method){
+        recommendation= "Please select all options";}
+    else if (intensity.value === "light" &&  method.value === "french"){
         recommendation = "AURORA";}
     else if (intensity.value === "light" && method.value === "espresso"){
         recommendation = "KRIN";}
@@ -41,7 +44,7 @@ button.addEventListener("click", () => {
     else if (intensity.value === "very strong" && method.value === "v60"){
         recommendation = "CHARM";}
     else {
-        recommendation = "Please select all options";}
+        recommendation = "";}
 
 
     blendName.textContent = recommendation;
