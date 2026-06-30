@@ -57,3 +57,5 @@ const coffe = {
     origin : "Ethiopia",
     roast : "strong" };
 console.log(coffe.name);
+console.log(coffe.origin);
+console.log(coffe.roast);
