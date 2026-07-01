@@ -16,3 +16,4 @@ A simple JavaScript project that recommends coffee blends based on brewing metho
 
 ## Live Demo
 
+https://gtr-1000.github.io/coffee-blend-recommender/
